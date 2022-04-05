@@ -19,7 +19,7 @@ def api_min():
         n = int(args.get('n', '')[0])
     else:
         n = 1
-    return(str(", ".join([str(x) for x in min_internal(nums)])))
+    return(str(", ".join([str(x) for x in min_internal(nums,n)])))
 
 def min_internal(nums,n=1):
     """
@@ -55,7 +55,7 @@ def api_max():
         n = int(args.get('n', '')[0])
     else:
         n = 1
-    return(str(", ".join([str(x) for x in max_internal(nums)])))
+    return(str(", ".join([str(x) for x in max_internal(nums,n)])))
 
 def max_internal(nums,n=1):
     """
